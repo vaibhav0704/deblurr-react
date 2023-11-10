@@ -19,7 +19,7 @@ const ImageUploader: React.FC<Props> = () => {
       const form = new FormData();
       form.append("image", image);
       try {
-        const response = await axios.post('https://b2f9-2409-40d1-102d-de49-6f3a-9900-1e88-9407.ngrok.io', form, {
+        const response = await axios.post('https://b2f9-2409-40d1-102d-de49-6f3a-9900-1e88-9407.ngrok.io/enhance', form, {
           responseType: 'arraybuffer',
         });
 
